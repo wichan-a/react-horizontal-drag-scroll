@@ -1,0 +1,23 @@
+.app {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.horizontal-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  scrollbar-width: none; /* ซ่อน scrollbar สำหรับเบราว์เซอร์ที่รองรับ */
+  -ms-overflow-style: none; /* ซ่อน scrollbar สำหรับ IE/Edge */
+}
+
+.horizontal-scroll-container::-webkit-scrollbar {
+  display: none; /* ซ่อน scrollbar สำหรับ Chrome/Safari/Opera */
+}
+
+.content {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 200px;
+  /* เพิ่มเนื้อหาที่คุณต้องการแสดงในนี้ */
+}
